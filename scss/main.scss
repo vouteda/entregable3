@@ -1,0 +1,15 @@
+// Import Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// Custom styles
+.opinion-box {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+}
