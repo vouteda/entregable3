@@ -1,11 +1,11 @@
 body {
-    background-color: #e6ffe6; /* Light green background */
+    background-color: #cfe6d9; /* Light green background like a tennis ball */
     color: #000; /* Black text for contrast */
 }
 
 .navbar {
-    background-color: #006400; /* Dark green */
-    height: 80px; /* Increase header height */
+    background-color: #005900; /* Dark green navbar */
+    height: 100px; /* Taller header */
 }
 
 .navbar-brand, .nav-link {
@@ -18,13 +18,12 @@ body {
 }
 
 .opinion-box {
-    background-color: #8FBC8F; /* A different shade of green */
-    border: 2px solid #000; /* Noticeable black border */
-    margin: 10px 0; /* Some margin for spacing */
+    background-color: #ffff99; /* Subdued yellow */
+    border: 2px solid #000; /* Black border */
+    margin: 10px 0; /* Margin for spacing */
     padding: 20px; /* Padding inside the boxes */
-    border-radius: 5px; /* Slightly rounded corners */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px; /* Ensure a minimum height */
+    border-radius: 5px; /* Rounded corners */
+    min-height: 100px; /* Minimum height */
+    text-align: center; /* Center align text */
 }
+
