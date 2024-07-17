@@ -1,0 +1,32 @@
+body {
+  background-color: #e6ffe6; /* Light green background */
+  color: #000; /* Black text for contrast */
+}
+
+.navbar {
+  background-color: #006400; /* Dark green */
+  height: 80px; /* Increase header height */
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important; /* White text for the navbar */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.opinion-box {
+  background-color: #8FBC8F; /* A different shade of green */
+  border: 2px solid #000; /* Noticeable black border */
+  margin: 10px 0; /* Some margin for spacing */
+  padding: 20px; /* Padding inside the boxes */
+  border-radius: 5px; /* Slightly rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px; /* Ensure a minimum height */
+}
+
+/*# sourceMappingURL=style.css.map */
