@@ -1,29 +1,60 @@
+// Import Bootstrap variables and mixins if needed
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Custom variables
+$primary-green: #006400; // Dark green for navbar
+$secondary-green: #8FBC8F; // Light green for background
+$yellow: #FFFF00; // Yellow for opinion cards
+
+// Body styles
 body {
-    background-color: #cfe6d9; /* Light green background like a tennis ball */
+    background-color: $secondary-green; /* Light green background */
     color: #000; /* Black text for contrast */
 }
 
+// Navbar styles
 .navbar {
-    background-color: #005900; /* Dark green navbar */
-    height: 100px; /* Taller header */
+    background-color: $primary-green; /* Dark green */
+    height: 100px; /* Increase header height */
 }
 
 .navbar-brand, .nav-link {
     color: #fff !important; /* White text for the navbar */
 }
 
+// Carousel styles (if needed)
 .carousel-item img {
     width: 100%;
     height: auto;
 }
 
+// Opinion box styles
 .opinion-box {
-    background-color: #ffff99; /* Subdued yellow */
-    border: 2px solid #000; /* Black border */
-    margin: 10px 0; /* Margin for spacing */
+    background-color: $yellow; /* Yellow background */
+    border: 2px solid #000; /* Noticeable black border */
+    margin-bottom: 20px; /* Bottom margin for spacing */
     padding: 20px; /* Padding inside the boxes */
-    border-radius: 5px; /* Rounded corners */
-    min-height: 100px; /* Minimum height */
-    text-align: center; /* Center align text */
+    border-radius: 5px; /* Slightly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; /* Ensure a minimum height */
+    color: #000; /* Black text */
 }
+
+// AOS animations
+[data-aos="fade-right"] {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
 
