@@ -1,10 +1,8 @@
 .navbar {
-    height: 100px;
+    height: 300px;
+    color: #3C638E
   }
   
-  .navbar-brand, .nav-link {
-    color: #ffffff !important; /* Color blanco para el texto */
-  }
   
   @media (max-width: 768px) {
     .navbar-brand {
