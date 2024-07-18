@@ -4,20 +4,50 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'FUENTE', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FUENTE', sans-serif; 
+}
+
+p {
+  font-family: 'FUENTE', sans-serif; /* Aplica la fuente a todos los párrafos */
 }
 
 .navbar {
-  background-color: #4a8f4a; /* Intense green */
-  height: 100px; /* Increased header height */
+  height: 100px;
 }
 
 .navbar-brand, .nav-link {
-  color: #ffffff !important; /* White text for the navbar */
+  color: #ffffff !important; /* Color blanco para el texto */
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      order: -1; /* Mueve el logo al principio en dispositivos móviles */
+      margin-right: auto; /* Alinea el logo a la izquierda */
+  }
+
+  .navbar-toggler {
+      order: 0; /* Asegura que el botón de toggle aparezca primero */
+  }
+
+  .navbar-collapse {
+      background-color: #4a8f4a; /* Color de fondo para el menú desplegable */
+      padding-top: 10px; /* Espaciado superior */
+      padding-bottom: 10px; /* Espaciado inferior */
+  }
+
+  .navbar-nav {
+      margin-left: auto; /* Alinea los elementos del menú a la derecha */
+  }
+}
+
 
 .carousel-item img {
   width: 100%;
-  height: 200px; /* Ajusta esta altura según tus necesidades */
+  height: 300px; 
   object-fit: cover;
 }
 
@@ -97,13 +127,13 @@ body {
 }
 
 [data-aos] {
-  transition-duration: 1000ms; /* 1 second animation duration */
+  transition-duration: 1500ms; /* 1 second animation duration */
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    height: 80px; /* Adjusted header height for smaller screens */
-  }
+
+@font-face {
+  font-family: 'FUENTE';
+  src: url('/font/Tennis.ttf') format('truetype');
+
 }
 
-/*# sourceMappingURL=style.css.map */
