@@ -1,35 +1,37 @@
 .navbar {
     height: 100px;
+    background-color: #4a8f4a; /* Color de fondo para la navbar */
   }
   
   .navbar-brand, .nav-link {
-    color: #3C638E
-  }
-  .navbar-logo {
-      height: 100%; 
-      width: auto; 
+    color: #ffffff; /* Color blanco para el texto */
   }
   
+  .navbar-logo {
+    height: 80%; /* Ajusta la altura según sea necesario */
+    width: auto; 
+  }
   
   @media (max-width: 768px) {
     .navbar-brand {
-        order: -1; /* Mueve el logo al principio en dispositivos móviles */
-        margin-right: auto; /* Alinea el logo a la izquierda */
+      order: -1; /* Mueve el logo al principio en dispositivos móviles */
+      margin-right: auto; /* Alinea el logo a la izquierda */
     }
   
     .navbar-toggler {
-        order: 0; /* Asegura que el botón de toggle aparezca primero */
+      order: 0; /* Asegura que el botón de toggle aparezca primero */
     }
   
     .navbar-collapse {
-        background-color: #4a8f4a; /* Color de fondo para el menú desplegable */
-        padding-top: 10px; /* Espaciado superior */
-        padding-bottom: 10px; /* Espaciado inferior */
+      background-color: #4a8f4a; /* Color de fondo para el menú desplegable */
+      padding-top: 10px; /* Espaciado superior */
+      padding-bottom: 10px; /* Espaciado inferior */
     }
   
     .navbar-nav {
-        margin-left: auto; /* Alinea los elementos del menú a la derecha */
+      margin-left: auto; /* Alinea los elementos del menú a la derecha */
     }
   }
   
+
   
