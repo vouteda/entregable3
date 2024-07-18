@@ -1,60 +1,53 @@
-// Import Bootstrap variables and mixins if needed
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+// Variables
+$tennis-ball-green: #7fbf7f; // Green color resembling a tennis ball
+$yellow-light: #ffffcc; // Light yellow for opinion boxes
+$green-text: #006400; // Dark green for text
 
-// Custom variables
-$primary-green: #006400; // Dark green for navbar
-$secondary-green: #8FBC8F; // Light green for background
-$yellow: #FFFF00; // Yellow for opinion cards
-
-// Body styles
+// General styles
 body {
-    background-color: $secondary-green; /* Light green background */
-    color: #000; /* Black text for contrast */
+    background-color: $tennis-ball-green; /* Light green background */
+    color: $green-text; /* Dark green text for contrast */
 }
 
-// Navbar styles
 .navbar {
-    background-color: $primary-green; /* Dark green */
-    height: 100px; /* Increase header height */
+    background-color: #006400; /* Dark green */
+    height: 100px; /* Increased header height */
 }
 
 .navbar-brand, .nav-link {
     color: #fff !important; /* White text for the navbar */
 }
 
-// Carousel styles (if needed)
 .carousel-item img {
     width: 100%;
     height: auto;
 }
 
-// Opinion box styles
 .opinion-box {
-    background-color: $yellow; /* Yellow background */
-    border: 2px solid #000; /* Noticeable black border */
+    background-color: $yellow-light; /* Light yellow background */
+    border: 2px solid $green-text; /* Dark green border */
     margin-bottom: 20px; /* Bottom margin for spacing */
     padding: 20px; /* Padding inside the boxes */
-    border-radius: 5px; /* Slightly rounded corners */
+    border-radius: 5px; /* Rounded corners */
+    min-height: 150px; /* Minimum height for consistent box size */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100px; /* Ensure a minimum height */
-    color: #000; /* Black text */
+    text-align: center; /* Center-align text */
 }
 
-// AOS animations
-[data-aos="fade-right"] {
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 0.5s, opacity 0.5s;
+.opinion-box-left {
+    text-align: left; /* Align text left for left-aligned boxes */
 }
 
-[data-aos="fade-left"] {
-    transform: translateX(0);
-    opacity: 1;
-    transition: transform 0.5s, opacity 0.5s;
+.opinion-box-right {
+    text-align: right; /* Align text right for right-aligned boxes */
 }
 
+// Media query for smaller screens
+@media (max-width: 768px) {
+    .navbar {
+        height: 80px; /* Adjusted header height for smaller screens */
+    }
+}
 
