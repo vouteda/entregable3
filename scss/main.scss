@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// Importaciones
+@import 'opiniones';
+@import 'navbar';
+@import 'productos';
+@import 'carousel';
+
+// Definición de fuente
+@font-face {
+    font-family: 'FUENTE';
+    src: url('/font/Tennis.woff2') format('woff2'),
+         url('/font/Tennis.woff') format('woff'),
+         url('/font/Tennis.ttf') format('truetype');
+  }
+
+// Estilo AOS
+[data-aos] {
+  transition-duration: 1500ms; 
+}
+
+// Estilos globales
+body {
+  background-color: #FFA500;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'FUENTE';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FUENTE';
+}
+
+p {
+  font-family: 'FUENTE';
+}

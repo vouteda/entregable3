@@ -1,0 +1,29 @@
+.navbar {
+    height: 100px;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #ffffff !important;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      order: -1;
+      margin-right: auto;
+    }
+  
+    .navbar-toggler {
+      order: 0;
+    }
+  
+    .navbar-collapse {
+      background-color: #4a8f4a;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .navbar-nav {
+      margin-left: auto;
+    }
+  }
+  
