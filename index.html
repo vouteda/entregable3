@@ -7,6 +7,28 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .section-overlay {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparente */
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparente */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        .opinion-box {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -102,27 +124,29 @@
 
     <!-- Opinions Section -->
     <section id="opinions" class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-right">
-                <div class="opinion-box opinion-box-left">
-                    <div class="p-3">Opinion 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="section-overlay">
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="opinion-box opinion-box-left">
+                        <div class="p-3">Opinion 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <div class="opinion-box opinion-box-right">
+                        <div class="p-3">Opinion 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-left">
-                <div class="opinion-box opinion-box-right">
-                    <div class="p-3">Opinion 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <div class="opinion-box opinion-box-left">
+                        <div class="p-3">Opinion 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-right">
-                <div class="opinion-box opinion-box-left">
-                    <div class="p-3">Opinion 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4" data-aos="fade-left">
-                <div class="opinion-box opinion-box-right">
-                    <div class="p-3">Opinion 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                <div class="col-md-6 mb-4" data-aos="fade-left">
+                    <div class="opinion-box opinion-box-right">
+                        <div class="p-3">Opinion 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,6 +165,7 @@
     </script>
 </body>
 </html>
+
 
 
 
