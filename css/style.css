@@ -1,28 +1,53 @@
+@charset "UTF-8";
 body {
-    background-color: #cfe6d9; /* Light green background like a tennis ball */
-    color: #000; /* Black text for contrast */
+  background-color: #4a8f4a; /* Intense green background */
+  color: #006400; /* Dark green text for contrast */
 }
 
 .navbar {
-    background-color: #005900; /* Dark green navbar */
-    height: 100px; /* Taller header */
+  background-color: #4a8f4a; /* Intense green */
+  height: 100px; /* Increased header height */
 }
 
 .navbar-brand, .nav-link {
-    color: #fff !important; /* White text for the navbar */
+  color: #ffffff !important; /* White text for the navbar */
 }
 
 .carousel-item img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .opinion-box {
-    background-color: #ffff99; /* Subdued yellow */
-    border: 2px solid #000; /* Black border */
-    margin: 10px 0; /* Margin for spacing */
-    padding: 20px; /* Padding inside the boxes */
-    border-radius: 5px; /* Rounded corners */
-    min-height: 100px; /* Minimum height */
-    text-align: center; /* Center align text */
+  background-color: #ffffff; /* White background */
+  border: 2px solid #006400; /* Dark green border */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+  padding: 20px; /* Padding inside the boxes */
+  border-radius: 5px; /* Rounded corners */
+  min-height: 150px; /* Minimum height for consistent box size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center-align text */
+  position: relative; /* Position for icon */
 }
+
+.opinion-box::before {
+  content: "👤"; /* Unicode for person icon */
+  font-size: 24px; /* Icon size */
+  position: absolute; /* Position the icon */
+  top: 10px; /* Adjust top position */
+  left: 10px; /* Adjust left position */
+}
+
+[data-aos] {
+  transition-duration: 1000ms; /* 1 second animation duration */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px; /* Adjusted header height for smaller screens */
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
