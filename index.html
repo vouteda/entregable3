@@ -13,8 +13,6 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4a8f4a;">
         <a class="navbar-brand" href="#">
             <img src="/img/final_icon.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-            
-            Website Title
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,20 +20,17 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section1">Section 1</a>
+                    <a class="nav-link" href="#productos">Productos<br>destacados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section2">Section 2</a>
+                    <a class="nav-link" href="#opiniones">Opiniones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section3">Section 3</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
-                <!-- Agrega más elementos de menú según sea necesario -->
             </ul>
         </div>
     </nav>
-    
-
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -130,6 +125,31 @@
             </div>
         </div>
     </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="bg-light text-center py-4 mt-5">
