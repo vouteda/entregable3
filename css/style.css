@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-image: url(https://st2.depositphotos.com/1006472/8413/i/450/depositphotos_84136734-stock-photo-tennis-balls-on-clay-court.jpg);
+  background-color: #FFA500;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,7 +17,8 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 400px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover;
 }
 
 .product-card {
@@ -72,6 +73,21 @@ body {
   background: rgba(255, 255, 255, 0.9); /* Semi-transparente */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover;
+}
+.product-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .opinion-box {
   background: rgba(0, 0, 0, 0.7);
