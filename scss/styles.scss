@@ -1,21 +1,20 @@
-// Variables
-$tennis-ball-green: #7fbf7f; // Green color resembling a tennis ball
-$yellow-light: #ffffcc; // Light yellow for opinion boxes
+$tennis-ball-green: #4a8f4a; // Intense tennis ball green
+$white-color: #ffffff; // White color for cards
 $green-text: #006400; // Dark green for text
 
 // General styles
 body {
-    background-color: $tennis-ball-green; /* Light green background */
+    background-color: $tennis-ball-green; /* Intense green background */
     color: $green-text; /* Dark green text for contrast */
 }
 
 .navbar {
-    background-color: #006400; /* Dark green */
+    background-color: $tennis-ball-green; /* Intense green */
     height: 100px; /* Increased header height */
 }
 
 .navbar-brand, .nav-link {
-    color: #fff !important; /* White text for the navbar */
+    color: $white-color !important; /* White text for the navbar */
 }
 
 .carousel-item img {
@@ -24,7 +23,7 @@ body {
 }
 
 .opinion-box {
-    background-color: $yellow-light; /* Light yellow background */
+    background-color: $white-color; /* White background */
     border: 2px solid $green-text; /* Dark green border */
     margin-bottom: 20px; /* Bottom margin for spacing */
     padding: 20px; /* Padding inside the boxes */
@@ -34,14 +33,20 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center; /* Center-align text */
+    position: relative; /* Position for icon */
 }
 
-.opinion-box-left {
-    text-align: left; /* Align text left for left-aligned boxes */
+.opinion-box::before {
+    content: "\1F464"; /* Unicode for person icon */
+    font-size: 24px; /* Icon size */
+    position: absolute; /* Position the icon */
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
 }
 
-.opinion-box-right {
-    text-align: right; /* Align text right for right-aligned boxes */
+// Adjust AOS animation duration
+[data-aos] {
+    transition-duration: 1000ms; /* 1 second animation duration */
 }
 
 // Media query for smaller screens
