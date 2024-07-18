@@ -3,27 +3,27 @@
   }
   
   .navbar-brand, .nav-link {
-    color: #ffffff !important;
+    color: #ffffff !important; /* Color blanco para el texto */
   }
   
   @media (max-width: 768px) {
     .navbar-brand {
-      order: -1;
-      margin-right: auto;
+        order: -1; /* Mueve el logo al principio en dispositivos móviles */
+        margin-right: auto; /* Alinea el logo a la izquierda */
     }
   
     .navbar-toggler {
-      order: 0;
+        order: 0; /* Asegura que el botón de toggle aparezca primero */
     }
   
     .navbar-collapse {
-      background-color: #4a8f4a;
-      padding-top: 10px;
-      padding-bottom: 10px;
+        background-color: #4a8f4a; /* Color de fondo para el menú desplegable */
+        padding-top: 10px; /* Espaciado superior */
+        padding-bottom: 10px; /* Espaciado inferior */
     }
   
     .navbar-nav {
-      margin-left: auto;
+        margin-left: auto; /* Alinea los elementos del menú a la derecha */
     }
   }
   
