@@ -27,8 +27,8 @@
 }
 
 .navbar {
-  height: 150px;
-  background-color: #4a8f4a; /* Color de fondo para la navbar */
+  height: 100px;
+  background-color: #3C638E; /* Color de fondo para la navbar */
 }
 
 .navbar-brand, .nav-link {
@@ -127,4 +127,4 @@ p {
   font-family: "FUENTE", sans-serif; /* Aplica la fuente a todos los párrafos */
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=newstyle.css.map */
