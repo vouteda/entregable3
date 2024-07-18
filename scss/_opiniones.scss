@@ -1,5 +1,5 @@
-opinion-box {
-    background-color: #ffffff; /* White background */
+.opinion-box {
+  
     border: 2px solid #006400; /* Dark green border */
     margin-bottom: 20px; /* Bottom margin for spacing */
     padding: 20px; /* Padding inside the boxes */
@@ -19,17 +19,10 @@ opinion-box {
     top: 10px; /* Adjust top position */
     left: 10px; /* Adjust left position */
   }
-
+  
   .section-overlay {
     background: rgba(255, 255, 255, 0.8); /* Semi-transparente */
     padding: 2rem;
     border-radius: 10px;
-  }
-
-  .opinion-box {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 10px;
-    padding: 1rem;
   }
   

@@ -19,19 +19,18 @@
   transition-duration: 1500ms; 
 }
 
-// Estilos globales
 body {
   background-color: #FFA500;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'FUENTE';
+  font-family: 'FUENTE', sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'FUENTE';
+  font-family: 'FUENTE', sans-serif; 
 }
 
 p {
-  font-family: 'FUENTE';
+  font-family: 'FUENTE', sans-serif; /* Aplica la fuente a todos los párrafos */
 }

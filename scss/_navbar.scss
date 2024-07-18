@@ -1,6 +1,13 @@
 .navbar {
-    height: 300px;
+    height: 100px;
+  }
+  
+  .navbar-brand, .nav-link {
     color: #3C638E
+  }
+  .navbar-logo {
+      height: 100%; 
+      width: auto; 
   }
   
   
@@ -24,4 +31,5 @@
         margin-left: auto; /* Alinea los elementos del menú a la derecha */
     }
   }
+  
   
