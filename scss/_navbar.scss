@@ -35,24 +35,29 @@
 
 .navbar-nav .nav-item .nav-link {
   position: relative;
+  text-align: center; /* Center the text and icon */
+  display: inline-block;
 }
 
-.navbar-nav .nav-item .nav-link::after {
-  content: url('img/pelota.png'); /* Path to the tennis ball image */
-  position: absolute;
-  left: 50%;
-  bottom: 100%; /* Position the tennis ball above the text */
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease, bottom 0.3s ease;
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
+.navbar-nav .nav-item .nav-link .iconify {
+  display: block;
+  font-size: 24px; /* This controls the size of the icon */
+  width: 24px; /* Set width if needed */
+  height: 24px; /* Set height if needed */
+  margin-bottom: 5px; /* Space between icon and text */
+  color: #ffffff; /* Ensure the icon color contrasts with the background */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
-.navbar-nav .nav-item .nav-link:hover::after {
+.navbar-nav .nav-item .nav-link:hover .iconify {
   opacity: 1;
-  bottom: 110%; /* Move the tennis ball slightly up when hovered */
+  transform: translateY(-10px); /* Move the icon slightly up when hovered */
 }
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f1f1f1; /* Change text color on hover if needed */
+}
+
 
   
 
