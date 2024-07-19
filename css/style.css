@@ -28,60 +28,47 @@
 
 .navbar {
   height: 100px;
-  background-color: #3C638E; /* Background color for the navbar */
+  background-color: #3C638E;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
-.navbar-brand, .nav-link {
-  color: #ffffff; /* White text color */
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #ffffff;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #4a8f4a;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 .navbar-logo {
-  height: 150px; /* Adjust the height as needed */
+  height: 150px;
   width: auto;
 }
 
 @media (max-width: 768px) {
-  .navbar-brand {
-    order: -1; /* Move the logo to the beginning on mobile devices */
-    margin-right: auto; /* Align the logo to the left */
-  }
-  .navbar-toggler {
-    order: 0; /* Ensure the toggle button appears first */
-  }
   .navbar-collapse {
-    background-color: #4a8f4a; /* Background color for the dropdown menu */
-    padding-top: 10px; /* Top padding */
-    padding-bottom: 10px; /* Bottom padding */
-  }
-  .navbar-nav {
-    margin-left: auto; /* Align menu items to the right */
+    background-color: #4a8f4a;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
-.navbar-nav .nav-item .nav-link {
-  position: relative;
-  text-align: center; /* Center the text and icon */
-  display: inline-block;
-}
-
-.navbar-nav .nav-item .nav-link .iconify {
-  display: block;
-  font-size: 24px; /* This controls the size of the icon */
-  width: 24px; /* Set width if needed */
-  height: 24px; /* Set height if needed */
-  margin-bottom: 5px; /* Space between icon and text */
-  color: #ffffff; /* Ensure the icon color contrasts with the background */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-}
-
-.navbar-nav .nav-item .nav-link:hover .iconify {
-  opacity: 1;
-  transform: translateY(-10px); /* Move the icon slightly up when hovered */
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: #f1f1f1; /* Change text color on hover if needed */
-}
-
 .product-card {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
