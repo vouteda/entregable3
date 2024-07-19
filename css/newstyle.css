@@ -28,35 +28,56 @@
 
 .navbar {
   height: 100px;
-  background-color: #3C638E; /* Color de fondo para la navbar */
+  background-color: #3C638E; /* Background color for the navbar */
 }
 
 .navbar-brand, .nav-link {
-  color: #ffffff; /* Color blanco para el texto */
+  color: #ffffff; /* White text color */
 }
 
 .navbar-logo {
-  height: 150px; /* Ajusta la altura según sea necesario */
+  height: 150px; /* Adjust the height as needed */
   width: auto;
 }
 
 @media (max-width: 768px) {
   .navbar-brand {
-    order: -1; /* Mueve el logo al principio en dispositivos móviles */
-    margin-right: auto; /* Alinea el logo a la izquierda */
+    order: -1; /* Move the logo to the beginning on mobile devices */
+    margin-right: auto; /* Align the logo to the left */
   }
   .navbar-toggler {
-    order: 0; /* Asegura que el botón de toggle aparezca primero */
+    order: 0; /* Ensure the toggle button appears first */
   }
   .navbar-collapse {
-    background-color: #4a8f4a; /* Color de fondo para el menú desplegable */
-    padding-top: 10px; /* Espaciado superior */
-    padding-bottom: 10px; /* Espaciado inferior */
+    background-color: #4a8f4a; /* Background color for the dropdown menu */
+    padding-top: 10px; /* Top padding */
+    padding-bottom: 10px; /* Bottom padding */
   }
   .navbar-nav {
-    margin-left: auto; /* Alinea los elementos del menú a la derecha */
+    margin-left: auto; /* Align menu items to the right */
   }
 }
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: url("img/pelota.png"); /* Path to the tennis ball image */
+  position: absolute;
+  left: 50%;
+  bottom: 100%; /* Position the tennis ball above the text */
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  opacity: 1;
+  bottom: 110%; /* Move the tennis ball slightly up when hovered */
+}
+
 .product-card {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,6 +138,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "FUENTE", sans-serif;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, h4, h5, h6 {
